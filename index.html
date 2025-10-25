@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>المهندس محمد - صيانة الأجهزة المنزلية شبين الكوم</title>
+    <!-- تحميل مكتبة Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;700;900&display=swap');
+        body {
+            font-family: 'Cairo', sans-serif;
+            background-color: #0c1421; /* خلفية كحلية عميقة */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 1rem;
+        }
+        .card {
+            background-color: #1a2233; /* لون خلفية البطاقات */
+            border-radius: 16px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+        }
+        .cta-button {
+            animation: bounce-scale 2s infinite;
+        }
+        @keyframes bounce-scale {
+            0%, 20%, 50%, 80%, 100% {
+                transform: translateY(0) scale(1);
+            }
+            40% {
+                transform: translateY(-5px) scale(1.03);
+            }
+            60% {
+                transform: translateY(-3px) scale(1.02);
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <main class="w-full max-w-xl mx-auto space-y-6">
+
+        <!-- القسم العلوي: شعار ونداء رئيسي -->
+        <!-- هذا القسم بالكامل مربوط بالاتصال المباشر -->
+        <a href="tel:01551454971" class="block w-full cursor-pointer transform transition duration-300 hover:scale-[1.01] active:scale-[0.99] focus:outline-none focus:ring-4 focus:ring-yellow-500/50 rounded-xl">
+            <div class="p-6 sm:p-8 card text-center border-t-4 border-yellow-500">
+                <svg class="w-16 h-16 text-yellow-500 mx-auto mb-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                    <!-- أيقونة صيانة متطورة -->
+                    <path d="M12 2a10 10 0 1 0 10 10A10.011 10.011 0 0 0 12 2zm0 18a8 8 0 1 1 8-8 8.009 8.009 0 0 1-8 8zm-1.5-2.5h3a.5.5 0 0 0 0-1h-3a.5.5 0 0 0 0 1zm.25-3.5h2.5a.25.25 0 0 0 0-.5h-2.5a.25.25 0 0 0 0 .5zm-.5-3.5h3.5a.5.5 0 0 0 0-1h-3.5a.5.5 0 0 0 0 1zM14 9a1 1 0 1 0-1-1 1 1 0 0 0 1 1z"/>
+                </svg>
+                <h1 class="text-3xl sm:text-4xl font-extrabold text-white leading-tight">
+                    هل توقف جهازك فجأة؟
+                </h1>
+                <p class="text-xl sm:text-2xl text-yellow-500 mt-2">
+                    صيانة فورية ومضمونة في نفس اليوم!
+                </p>
+                <div class="mt-5 bg-red-600/90 text-white p-3 rounded-lg cta-button">
+                    <p class="text-lg font-bold">إضغط هنا للإتصال المباشر</p>
+                </div>
+            </div>
+        </a>
+
+        <!-- قسم ملف المهندس والموقع -->
+        <div class="p-6 card">
+            <h2 class="text-2xl font-bold text-yellow-500 mb-4 border-b pb-2 border-gray-700">
+                ⭐ خبرة هندسية موثوقة
+            </h2>
+            <div class="space-y-3">
+                <div class="flex items-center text-gray-300">
+                    <svg class="w-6 h-6 text-green-400 ml-3" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2zM9.71 18l-4.71-4.71 1.41-1.42L9.71 15.17l6.88-6.88 1.41 1.41L9.71 18z"/>
+                    </svg>
+                    <p><span class="font-bold text-white">المهندس:</span> محمد (متخصص صيانة)</p>
+                </div>
+                <div class="flex items-start text-gray-300">
+                    <svg class="w-6 h-6 text-red-400 ml-3 mt-1 flex-shrink-0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M12 2a8 8 0 0 0-8 8c0 5.4 6.7 11.5 7.4 12.2a1 1 0 0 0 1.2 0c.7-.7 7.4-6.8 7.4-12.2a8 8 0 0 0-8-8zm0 18.2c-2.9-2.8-5-5.9-5-10.2a6 6 0 0 1 12 0c0 4.3-2.1 7.4-5 10.2zm0-12a2 2 0 1 0 2 2 2 2 0 0 0-2-2z"/>
+                    </svg>
+                    <p class="text-sm sm:text-base leading-relaxed">
+                        <span class="font-bold text-white">العنوان:</span> شبين الكوم - البر الشرقي - بجوار مكتبة البخاري.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- قسم الخدمات الرئيسية -->
+        <div class="p-6 card">
+            <h2 class="text-2xl font-bold text-yellow-500 mb-4 border-b pb-2 border-gray-700">
+                🧰 متخصّصون في صيانة جميع الأجهزة
+            </h2>
+            <div class="grid grid-cols-2 gap-4 text-gray-300 text-lg">
+                <p class="flex items-center"><span class="text-yellow-400 font-extrabold ml-2">•</span> مراوح ومكاوي</p>
+                <p class="flex items-center"><span class="text-yellow-400 font-extrabold ml-2">•</span> غسالات وخلاطات</p>
+                <p class="flex items-center"><span class="text-yellow-400 font-extrabold ml-2">•</span> كبة وكاتل</p>
+                <p class="flex items-center"><span class="text-yellow-400 font-extrabold ml-2">•</span> مواتير المياه</p>
+            </div>
+        </div>
+
+        <!-- قسم المزايا والضمان -->
+        <div class="p-6 card">
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 text-center">
+                <div class="bg-gray-800 p-4 rounded-lg">
+                    <p class="text-3xl text-green-400 mb-1">💯</p>
+                    <p class="font-bold text-white text-sm">شغل مضمون</p>
+                </div>
+                <div class="bg-gray-800 p-4 rounded-lg">
+                    <p class="text-3xl text-blue-400 mb-1">⚙️</p>
+                    <p class="font-bold text-white text-sm">قطع غيار أصلية</p>
+                </div>
+                <div class="bg-gray-800 p-4 rounded-lg">
+                    <p class="text-3xl text-red-400 mb-1">🚚</p>
+                    <p class="font-bold text-white text-sm">صيانة منزلية</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- قسم الاتصال النهائي (للتأكيد فقط) -->
+        <div class="p-6 card text-center bg-yellow-500/95 text-gray-900">
+            <p class="text-xl font-semibold mb-2">📞 للتواصل والإستفسار الفوري:</p>
+            <a href="tel:01551454971" class="text-4xl sm:text-5xl font-extrabold tracking-wider transition-colors duration-200 hover:text-black block">
+                01551454971
+            </a>
+            <p class="mt-3 text-base font-medium">
+                دقة في الشغل، سرعة في التنفيذ، وأسعار مناسبة.
+            </p>
+        </div>
+
+    </main>
+
+</body>
+</html>
+
